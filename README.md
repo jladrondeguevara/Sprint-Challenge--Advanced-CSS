@@ -34,13 +34,18 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+An adaptive website has predetermined layout sizes to use in order to change the contents of the website to better serve the user. A fully responsive website takes into account the size of a screen, doesnt soley see the size of the devices screen but how the given space to function.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+2. Describe what it means to be mobile first vs desktop first.
+Mobile first, when the layout of the website is developed with a mobile perspective first rather than a desktop first. So the layout of the website is first designed for a cellphone then later uses media queries to upscale to desktop view. Desktop first is a website developed with desktop view in mind.
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+That is setting the default font size. When using rem anywhere in the website, the selector will reference the font-size in html. Thus returning 32px when using 2rem.
 
 4. How would you describe preprocessing to someone new to CSS?
-
+Preprocessing is code that facilitates the process of styling a webpage. Preprocessing makes it easier and faster to apply styles to various elements without having to edit every single one element in the css file.
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+I love mixins, as I was first working on CSS before being introduced to preprocessing, I though about a way of making css writing easier. Preprocessing is what I had in mind. I like the idea of creating mixins and being able to use them wherever needed. More importantly though, the ability of adding parameters to personalize your styling more in dept. My most trouble is undertanding deep levels of nesting when should I derectly reference a grandchild element in a parent class. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
