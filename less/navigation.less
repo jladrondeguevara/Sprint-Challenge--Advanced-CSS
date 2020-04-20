@@ -1,21 +1,18 @@
 // Navigation code here
 @import "variables";
+@import "mixins";
+
 .nav-container {
-    padding-top: 1%;
-    background-color: @nav-bg;
-    color: @nav-font;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: @nav-border;
+    .navContainerStyle();
     
     nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin: 0 auto;
+        .navigationStyle();
         padding-bottom: 1%;
+        padding-top: 1%;
         width: 35%;
-        
+        @media @phone {
+            width: 90%;
+        }
     }
     h1 {
         text-align: center;
@@ -25,5 +22,9 @@
         font-size: 1.7rem;
         text-decoration: none;
         color: @nav-font;
+        &:hover {
+            background-color: black;
+            color: @white;
+        }
     }
 }

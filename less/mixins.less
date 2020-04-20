@@ -1,1 +1,29 @@
 // Mixins Here
+@import "variables";
+.navigationStyle()
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.navContainerStyle
+{
+    padding-top: 1%;
+    background-color: @nav-bg;
+    color: @nav-font;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: @nav-border;
+}
+
+.btnStyle(@width, @border-radius)
+{
+    background-color: @btn-bg-color;
+    width: @width;
+    padding: 3% 5% 3% 5%;
+    border-radius: @border-radius;
+    text-align: center;
+    font-size: 1.7rem;
+    color: @btn-font-color;
+}
